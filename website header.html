@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding-top: 70px; /* Adjust based on the header height */
+        }
+
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff; /* Change to match the website's color */
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .fixed-header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .fixed-header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .fixed-header nav ul li {
+            margin: 0 15px;
+        }
+
+        .fixed-header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .fixed-header nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Example content section */
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fixed-header">
+        <div class="logo">ProInsure</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h1>Welcome to ProInsure</h1>
+            <p>Scroll down to see the fixed header in action.</p>
+        </section>
+    </main>
+
+</body>
+</html>
